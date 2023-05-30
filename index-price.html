@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style-price.css">
+    <link rel="icon" href="../Assets/Logo.png" type="image/x-icon">
+    <title>Price Laundry</title>
+</head>
+<body onload="filter_all()">
+    <section class="first-section">
+        <nav>
+            <a href="./index.html"><img src="../Assets/Logo.png" alt=""></a>
+            <div class="nav-links-container">
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="index-laundry.html"><li>MY LAUNDRY</li></a>
+                    <a href="index-price.html"><li>PRICE</li></a>
+                    <a href="#bottom"><li>CONTACT US</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="second-section">
+        <h1>Filter</h1>
+        <div class="filter-elements-container">
+            <input type="radio" class="hidden" name="Filter-Elements" id="all" checked onclick="filter_all()" > 
+            <label for="all">All</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="pakaian" onclick="filter_pakaian()">
+            <label for="pakaian">Pakaian</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="bedcover" onclick="filter_bedcover()">
+            <label for="bedcover">Bedcover</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="boneka" onclick="filter_boneka()">
+            <label for="boneka">Boneka</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="karpet-tikar" onclick="filter_karpet_tikar()">
+            <label for="karpet-tikar">Karpet & tikar</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="jas-kasur" onclick="filter_jas_kasur()">
+            <label for="jas-kasur">Jas & Kasur</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="sprei-selimut" onclick="filter_sprei_selimut()">
+            <label for="sprei-selimut">Sprei & Selimut</label>
+    
+            <input type="radio" class="hidden" name="Filter-Elements" id="itemlain" onclick="filter_itemLain()">
+            <label for="itemlain">Item lain</label>
+        </div>
+    
+        <div class="data-container">
+            <div id="pakaian-data">
+                <h1>Pakaian</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 1.500/ kg</h3>
+                        <p>Cuci</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 2.000/ kg</h3>
+                        <p>Cuci kering</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 3.000/ kg</h3>
+                        <p>Cuci setrika</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 2.000/ kg</h3>
+                        <p>Setrika</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bedcover-data">
+                <h1>Bedcover</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 6.500/ potong</h3>
+                        <p>Bed cover single</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 8.000/ potong</h3>
+                        <p>Bed cover double</p>
+                    </div>
+                </div>
+            </div>
+            <div id="boneka-data">
+                <h1>Boneka</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 3.000/ buah</h3>
+                        <p>Boneka ukuran kecil</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 4.500/ buah</h3>
+                        <p>Boneka ukuran sedang</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 6.500/ buah</h3>
+                        <p>Boneka ukuran besar</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 13.000/ buah</h3>
+                        <p>Boneka ukuran super besar</p>
+                    </div>
+                </div>
+            </div>
+            <div id="karpet-tikar-data">
+                <div class="karpet-tikar-data-container">
+                    <h1>Karpet</h1>
+                    <div class="card-container">
+                        <div class="card">
+                            <h3>IDR 5.000/ meter</h3>
+                            <p>Karpet tipis</p>
+                        </div>
+                        <div class="card">
+                            <h3>IDR 6.000/ meter</h3>
+                            <p>Karpet besar</p>
+                        </div>
+                    </div>
+                    <h1>Tikar</h1>
+                    <div class="card-container">
+                        <div class="card">
+                            <h3>IDR 8.000/ buah</h3>
+                            <p>Tikar besar</p>
+                        </div>
+                        <div class="card">
+                            <h3>IDR 6.000/ buah</h3>
+                            <p>Tikar kecil</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div id="jas-kasur-data">
+                <h1>Jas</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 6.000/ potong</h3>
+                        <p>Tikar besar</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 6.000/ kg</h3>
+                        <p>Tikar kecil</p>
+                    </div>
+                </div>
+                <h1>Kasur</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 25.000/ buah</h3>
+                        <p>Kasur Palembang Besar</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 20.000/ buah</h3>
+                        <p>Kasur Palembang Kecil</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sprei-selimut-data">
+                <h1>Sprei</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 5.000/ buah</h3>
+                        <p>Sleeping Bed</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 4.000/ buah</h3>
+                        <p>Sprei Double</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 2.000/ buah</h3>
+                        <p>Sprei single</p>
+                    </div>
+                </div>
+                <h1>Selimut</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 8.000/ buah</h3>
+                        <p>Selimut super tebal</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 5.000/ buah</h3>
+                        <p>Selimut tebal</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 4.000/ buah</h3>
+                        <p>Selimut tipis</p>
+                    </div>
+                </div>
+            </div>
+            <div id="item-lain-data">
+                <h1>Item lain</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>IDR 10.000/ buah</h3>
+                        <p>Koper</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 5.000/ potong</h3>
+                        <p>Blazer/Safari</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 8.500/ potong</h3>
+                        <p>Jaket kulit</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 5.000/ buah</h3>
+                        <p>Sepatu / tas</p>
+                    </div>
+                    <div class="card">
+                        <h3>IDR 1.500/ meter</h3>
+                        <p>Gordyn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <h1>Apalagi yang anda tunggu?</h1>
+        <button>Pesan sekarang!</button>
+    </section>
+
+    <div class="scroll-to-top">
+        <a href="#top"><img src="../Assets/Scroll to top.png" alt=""></a>
+        <h4>Scroll to top</h4>
+    </div>
+    
+    <footer>
+        <div id="bottom"></div>
+        <div class="alamat">
+            <h1>Alamat</h1>
+            <p>Jl. Tanuragan Rt 04/07 Pabelan, Kartasura (barat Universitas Muhammadiyah Surakarta)</p>
+        </div>
+        <div class="social-media">
+            <a href="https://instagram.com"><img src="../Assets/instagram.png" alt=""></a>
+            <a href="https://whatsapp.com"><img src="../Assets/whatsapp.png" alt=""></a>
+            <a href="https://twitter.com"><img src="../Assets/twitter.png" alt=""></a>
+            <a href="https://facebook.com"><img src="../Assets/facebook.png" alt=""></a>
+        </div>
+        <div class="contact-us">
+            <h1>Contact us</h1>
+            <p>+62-856-4708-6800</p>
+        </div>
+    </footer>
+</body>
+
+<script src="../JAVASCRIPT/script-price.js"></script>
+</html>
